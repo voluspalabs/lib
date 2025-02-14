@@ -1,0 +1,39 @@
+Hono Media Business Source License
+
+Copyright © 2025, Hono Media
+
+This license ("License") grants rights in specified software code (the "Code") under a business-source-style license that applies one set of terms and conditions (the "Pre-Change Terms") to the Code and all modified Code before a specified date (the "Change Date"), and another set of terms and conditions (the "Post-Change Terms") on and after the Change Date. The Change Date for this license is **01 January 2028**.
+
+More about this License can be found at: https://honomedia.com/license
+
+---
+
+A. Pre-Change Terms: License before 01 January 2028
+
+Prior to the Change Date, you have the non-exclusive, worldwide rights under this License to copy, modify, display, use, and redistribute the Code **only under the following conditions**:
+
+1. The Code **cannot be used for any commercial purposes** (including SaaS applications, paid services, or any revenue-generating projects) without purchasing a separate commercial license.
+2. The Code **must not be used in any product that competes** with Hono Media’s services.
+3. The Code **must not be redistributed as part of a hosted service or cloud-based platform**.
+4. All copies and modifications of the Code must:
+   - Display an appropriate copyright notice.
+   - Retain all original notices that this License applies.
+   - Include a copy of this License with the Code.
+
+If you want to use the Code outside these conditions, you **must purchase a commercial license** before deployment. You can request a commercial license at:
+
+📧 info@honomedia.com
+
+Any attempt to use the Code outside the permitted scope of the Pre-Change Terms will automatically terminate your rights under this License.
+
+⚠ NO WARRANTY: The Code is provided **"AS IS"** without any warranties, including (but not limited to) merchantability, fitness for a particular purpose, or accuracy of information.
+
+---
+
+B. Post-Change Terms: License after 01 January 2028
+
+On and after the Change Date, this software will be released under the MIT License.
+
+This means you may use, modify, and distribute the software freely under the terms of the MIT License.
+
+If you need a commercial license before this date, contact us at info@honomedia.com.

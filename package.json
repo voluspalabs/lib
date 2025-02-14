@@ -1,0 +1,64 @@
+{
+  "name": "@voluspalabs/lib",
+  "version": "0.0.1",
+  "description": "A collection of high-quality utility functions and React hooks for building modern web applications.",
+  "keywords": ["lib", "typescript", "react"],
+  "homepage": "https://github.com/voluspalabs/lib",
+  "bugs": {
+    "url": "https://github.com/voluspalabs/lib/issues"
+  },
+  "author": "Voluspa <info@voluspa.io> (https://voluspa.io)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voluspalabs/lib.git"
+  },
+  "files": ["dist"],
+  "type": "module",
+  "license": "BSL-1.0",
+  "exports": {
+    "./hooks/use-mobile": {
+      "types": "./dist/hooks/use-mobile.d.ts",
+      "default": "./dist/hooks/use-mobile.js"
+    },
+    "./hooks/use-debounce": {
+      "types": "./dist/hooks/use-debounce.d.ts",
+      "default": "./dist/hooks/use-debounce.js"
+    },
+    "./utils/cn": {
+      "types": "./dist/utils/cn.d.ts",
+      "default": "./dist/utils/cn.js"
+    }
+  },
+  "scripts": {
+    "clean": "bunx del-cli ./dist",
+    "build": "tsup",
+    "ci": "bun run build && bun run biome ci && bun run check-exports",
+    "check-format": "biome check --write",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm --profile esm-only",
+    "local-release": "bun run ci && changeset version && changeset publish"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.0.1"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.17.3",
+    "@biomejs/biome": "^1.9.4",
+    "@changesets/cli": "^2.27.12",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3",
+    "ultracite": "^4.1.19"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

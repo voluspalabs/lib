@@ -22,8 +22,9 @@
     "allowUnusedLabels": false,
 
     /* If transpiling with TypeScript: */
-    "module": "Preserve",
-    "noEmit": true, // Set to false if you want to compile to JS
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
     "lib": ["DOM", "DOM.Iterable", "ES2022"]
   },
   "include": ["src"],

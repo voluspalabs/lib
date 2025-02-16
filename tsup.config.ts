@@ -4,14 +4,14 @@ export default defineConfig({
   entry: ['src/hooks/*', 'src/utils/*'],
   outDir: 'dist',
   format: ['esm'],
+  sourcemap: true,
   dts: true,
   clean: true,
   treeshake: true,
-  splitting: true,
   skipNodeModulesBundle: true,
-  target: 'es2022',
-
-  // Prod
+  target: 'esnext',
+  external: ['react', 'react-dom'],
   minify: true,
   bundle: true,
+  splitting: true,
 })

@@ -1,5 +1,11 @@
 # @voluspalabs/lib
 
+## 0.0.4
+
+### Patch Changes
+
+- cae80c3: Config & text udpate
+
 ## 0.0.3
 
 ### Patch Changes

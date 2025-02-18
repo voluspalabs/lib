@@ -2,11 +2,7 @@
   "name": "@voluspalabs/lib",
   "version": "0.0.4",
   "description": "A collection of high-quality utility functions and React hooks for building modern web applications.",
-  "keywords": [
-    "lib",
-    "typescript",
-    "react"
-  ],
+  "keywords": ["lib", "typescript", "react"],
   "homepage": "https://github.com/voluspalabs/lib",
   "bugs": {
     "url": "https://github.com/voluspalabs/lib/issues"
@@ -16,32 +12,22 @@
     "type": "git",
     "url": "git+https://github.com/voluspalabs/lib.git"
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "type": "module",
   "license": "MIT",
   "sideEffects": false,
   "typesVersions": {
     "*": {
-      "*": [
-        "./dist/*"
-      ]
+      "*": ["./dist/*"]
     },
     "hooks/use-mobile": {
-      "*": [
-        "./dist/hooks/use-mobile.d.ts"
-      ]
+      "*": ["./dist/hooks/use-mobile.d.ts"]
     },
     "hooks/use-debounce": {
-      "*": [
-        "./dist/hooks/use-debounce.d.ts"
-      ]
+      "*": ["./dist/hooks/use-debounce.d.ts"]
     },
     "utils/cn": {
-      "*": [
-        "./dist/utils/cn.d.ts"
-      ]
+      "*": ["./dist/utils/cn.d.ts"]
     }
   },
   "exports": {
@@ -64,6 +50,7 @@
     "ci": "bun run build && bun run biome ci && bun run check-exports",
     "check-format": "biome check --write",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm --profile esm-only",
+    "ver": "changeset",
     "local-release": "bun run ci && changeset version && changeset publish"
   },
   "dependencies": {
@@ -73,9 +60,9 @@
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.17.3",
     "@biomejs/biome": "^1.9.4",
-    "@changesets/cli": "^2.27.12",
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
+    "@changesets/cli": "^2.28.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
     "tsup": "^8.3.6",
     "typescript": "^5.7.3",
     "ultracite": "^4.1.19"

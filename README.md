@@ -49,4 +49,4 @@ The built files will be output to the dist directory as defined in package.json.
 
 ## License
 
-This project is licensed under the BSL-1.0 License. See the LICENSE file for more details.
+This project is licensed under the MIT License. See the LICENSE file for more details.

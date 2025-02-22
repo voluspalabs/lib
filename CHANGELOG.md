@@ -1,5 +1,11 @@
 # @voluspalabs/lib
 
+## 0.0.8
+
+### Patch Changes
+
+- 80a78bd: Added new exports for additional hooks and utils
+
 ## 0.0.7
 
 ### Patch Changes

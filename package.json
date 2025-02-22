@@ -2,11 +2,7 @@
   "name": "@voluspalabs/lib",
   "version": "0.0.7",
   "description": "A collection of high-quality utility functions and React hooks for building modern web applications.",
-  "keywords": [
-    "lib",
-    "typescript",
-    "react"
-  ],
+  "keywords": ["lib", "typescript", "react"],
   "homepage": "https://github.com/voluspalabs/lib",
   "bugs": {
     "url": "https://github.com/voluspalabs/lib/issues"
@@ -16,46 +12,60 @@
     "type": "git",
     "url": "git+https://github.com/voluspalabs/lib.git"
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "type": "module",
   "license": "MIT",
   "sideEffects": false,
   "typesVersions": {
     "*": {
-      "*": [
-        "./dist/*"
-      ]
+      "*": ["./dist/*"]
     },
     "hooks/use-mobile": {
-      "*": [
-        "./dist/hooks/use-mobile.d.ts"
-      ]
+      "*": ["./dist/hooks/use-mobile.d.ts"]
     },
     "hooks/use-debounce": {
-      "*": [
-        "./dist/hooks/use-debounce.d.ts"
-      ]
+      "*": ["./dist/hooks/use-debounce.d.ts"]
     },
     "utils/cn": {
-      "*": [
-        "./dist/utils/cn.d.ts"
-      ]
+      "*": ["./dist/utils/cn.d.ts"]
     }
   },
   "exports": {
-    "./hooks/use-mobile": {
-      "types": "./dist/hooks/use-mobile.d.ts",
-      "default": "./dist/hooks/use-mobile.js"
+    "./hooks/use-copy-to-clipboard": {
+      "types": "./dist/hooks/use-copy-to-clipboard.d.ts",
+      "default": "./dist/hooks/use-copy-to-clipboard.js"
     },
     "./hooks/use-debounce": {
       "types": "./dist/hooks/use-debounce.d.ts",
       "default": "./dist/hooks/use-debounce.js"
     },
+    "./hooks/use-hot-key": {
+      "types": "./dist/hooks/use-hot-key.d.ts",
+      "default": "./dist/hooks/use-hot-key.js"
+    },
+    "./hooks/use-local-storage": {
+      "types": "./dist/hooks/use-local-storage.d.ts",
+      "default": "./dist/hooks/use-local-storage.js"
+    },
+    "./hooks/use-media-query": {
+      "types": "./dist/hooks/use-media-query.d.ts",
+      "default": "./dist/hooks/use-media-query.js"
+    },
+    "./hooks/use-mobile": {
+      "types": "./dist/hooks/use-mobile.d.ts",
+      "default": "./dist/hooks/use-mobile.js"
+    },
     "./utils/cn": {
       "types": "./dist/utils/cn.d.ts",
       "default": "./dist/utils/cn.js"
+    },
+    "./utils/format": {
+      "types": "./dist/utils/format.d.ts",
+      "default": "./dist/utils/format.js"
+    },
+    "./utils/is-array": {
+      "types": "./dist/utils/is-array.d.ts",
+      "default": "./dist/utils/is-array.js"
     }
   },
   "scripts": {

@@ -1,5 +1,11 @@
 # @voluspalabs/lib
 
+## 0.0.7
+
+### Patch Changes
+
+- f0881db: Added new custom hooks and utils
+
 ## 0.0.6
 
 ### Patch Changes

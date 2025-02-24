@@ -1,6 +1,6 @@
 {
   "name": "@voluspalabs/lib",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A collection of high-quality utility functions and React hooks for building modern web applications.",
   "keywords": [
     "lib",
@@ -80,7 +80,8 @@
     "./utils/is-array": {
       "types": "./dist/utils/is-array.d.ts",
       "default": "./dist/utils/is-array.js"
-    }
+    },
+    "./package.json": "./package.json"
   },
   "scripts": {
     "clean": "bunx del-cli ./dist",

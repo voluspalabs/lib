@@ -1,5 +1,11 @@
 # @voluspalabs/lib
 
+## 0.0.10
+
+### Patch Changes
+
+- 4c50684: Added try util
+
 ## 0.0.9
 
 ### Patch Changes

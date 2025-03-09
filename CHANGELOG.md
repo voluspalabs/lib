@@ -1,5 +1,11 @@
 # @voluspalabs/lib
 
+## 0.0.12
+
+### Patch Changes
+
+- 08b6207: Update packages
+
 ## 0.0.11
 
 ### Patch Changes

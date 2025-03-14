@@ -28,6 +28,9 @@
     },
     "utils/cn": {
       "*": ["./dist/utils/cn.d.ts"]
+    },
+    "utils/try": {
+      "*": ["./dist/utils/try.d.ts"]
     }
   },
   "exports": {
@@ -66,6 +69,10 @@
     "./utils/is-array": {
       "types": "./dist/utils/is-array.d.ts",
       "default": "./dist/utils/is-array.js"
+    },
+    "./utils/try": {
+      "types": "./dist/utils/try.d.ts",
+      "default": "./dist/utils/try.js"
     },
     "./package.json": "./package.json"
   },

@@ -1,5 +1,11 @@
 # @voluspalabs/lib
 
+## 0.0.13
+
+### Patch Changes
+
+- d852841: Add new utility functions and enhance date formatting
+
 ## 0.0.12
 
 ### Patch Changes

@@ -22,5 +22,6 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "biomejs.biome"
-  }
+  },
+  "cSpell.words": ["attw", "bunx", "voluspalabs"]
 }

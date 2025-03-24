@@ -153,3 +153,51 @@ export function formatCompactNumber(value: number) {
 
   return value.toString()
 }
+
+/**
+ * Formats a date into a human-readable relative time string (e.g., "5 minutes ago").
+ *
+ * @param date - The date to format, can be a Date object or a string
+ * @returns A formatted relative time string or 'Invalid Date' if the input is invalid
+ *
+ * @example
+ * // Returns "5 minutes ago" if the date was 5 minutes ago
+ * formatRelativeTime(new Date(Date.now() - 5 * 60 * 1000))
+ *
+ * @example
+ * // Returns "2 hours ago" if the date was 2 hours ago
+ * formatRelativeTime("2023-03-12T10:45:00")
+ */
+export function formatRelativeTime(date: Date | string): string {
+  try {
+    const inputDate = date instanceof Date ? date : new Date(date)
+
+    if (!isValidDate(inputDate)) {
+      return 'Invalid Date'
+    }
+
+    const now = new Date()
+    const diff = now.getTime() - inputDate.getTime()
+
+    // Convert to appropriate time units
+    const seconds = Math.floor(diff / 1000)
+    if (seconds < 60) return 'Just now'
+
+    const minutes = Math.floor(seconds / 60)
+    if (minutes < 60) return `${minutes} minute${minutes === 1 ? '' : 's'} ago`
+
+    const hours = Math.floor(minutes / 60)
+    if (hours < 24) return `${hours} hour${hours === 1 ? '' : 's'} ago`
+
+    const days = Math.floor(hours / 24)
+    if (days < 30) return `${days} day${days === 1 ? '' : 's'} ago`
+
+    const months = Math.floor(days / 30)
+    if (months < 12) return `${months} month${months === 1 ? '' : 's'} ago`
+
+    const years = Math.floor(days / 365)
+    return `${years} year${years === 1 ? '' : 's'} ago`
+  } catch {
+    return 'Invalid Date'
+  }
+}

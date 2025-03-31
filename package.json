@@ -2,11 +2,7 @@
   "name": "@voluspalabs/lib",
   "version": "0.0.14",
   "description": "A collection of high-quality utility functions and React hooks for building modern web applications.",
-  "keywords": [
-    "lib",
-    "typescript",
-    "react"
-  ],
+  "keywords": ["lib", "typescript", "react"],
   "homepage": "https://github.com/voluspalabs/lib",
   "bugs": {
     "url": "https://github.com/voluspalabs/lib/issues"
@@ -16,37 +12,25 @@
     "type": "git",
     "url": "git+https://github.com/voluspalabs/lib.git"
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "type": "module",
   "license": "MIT",
   "sideEffects": false,
   "typesVersions": {
     "*": {
-      "*": [
-        "./dist/*"
-      ]
+      "*": ["./dist/*"]
     },
     "hooks/use-mobile": {
-      "*": [
-        "./dist/hooks/use-mobile.d.ts"
-      ]
+      "*": ["./dist/hooks/use-mobile.d.ts"]
     },
     "hooks/use-debounce": {
-      "*": [
-        "./dist/hooks/use-debounce.d.ts"
-      ]
+      "*": ["./dist/hooks/use-debounce.d.ts"]
     },
     "utils/cn": {
-      "*": [
-        "./dist/utils/cn.d.ts"
-      ]
+      "*": ["./dist/utils/cn.d.ts"]
     },
     "utils/try": {
-      "*": [
-        "./dist/utils/try.d.ts"
-      ]
+      "*": ["./dist/utils/try.d.ts"]
     }
   },
   "exports": {
@@ -117,9 +101,9 @@
   },
   "peerDependencies": {
     "class-variance-authority": "^0.7.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "sonner": "^2.0.1"
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "sonner": "^2.0.2"
   },
   "engines": {
     "node": ">=20.0.0"

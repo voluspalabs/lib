@@ -1,5 +1,11 @@
 # @voluspalabs/lib
 
+## 0.0.15
+
+### Patch Changes
+
+- 966bdc6: Minor package.json updates
+
 ## 0.0.14
 
 ### Patch Changes

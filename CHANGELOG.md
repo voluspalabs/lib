@@ -1,5 +1,11 @@
 # @voluspalabs/lib
 
+## 0.0.17
+
+### Patch Changes
+
+- 4aea2ce: Package update
+
 ## 0.0.16
 
 ### Patch Changes

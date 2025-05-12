@@ -2,11 +2,7 @@
   "name": "@voluspalabs/lib",
   "version": "0.0.16",
   "description": "A collection of high-quality utility functions and React hooks for building modern web applications.",
-  "keywords": [
-    "lib",
-    "typescript",
-    "react"
-  ],
+  "keywords": ["lib", "typescript", "react"],
   "homepage": "https://github.com/voluspalabs/lib",
   "bugs": {
     "url": "https://github.com/voluspalabs/lib/issues"
@@ -16,37 +12,25 @@
     "type": "git",
     "url": "git+https://github.com/voluspalabs/lib.git"
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "type": "module",
   "license": "MIT",
   "sideEffects": false,
   "typesVersions": {
     "*": {
-      "*": [
-        "./dist/*"
-      ]
+      "*": ["./dist/*"]
     },
     "hooks/use-mobile": {
-      "*": [
-        "./dist/hooks/use-mobile.d.ts"
-      ]
+      "*": ["./dist/hooks/use-mobile.d.ts"]
     },
     "hooks/use-debounce": {
-      "*": [
-        "./dist/hooks/use-debounce.d.ts"
-      ]
+      "*": ["./dist/hooks/use-debounce.d.ts"]
     },
     "utils/cn": {
-      "*": [
-        "./dist/utils/cn.d.ts"
-      ]
+      "*": ["./dist/utils/cn.d.ts"]
     },
     "utils/try": {
-      "*": [
-        "./dist/utils/try.d.ts"
-      ]
+      "*": ["./dist/utils/try.d.ts"]
     }
   },
   "exports": {
@@ -103,13 +87,13 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
-    "tailwind-merge": "^3.2.0"
+    "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
     "@voluspalabs/lint": "^0.0.10",
-    "@arethetypeswrong/cli": "^0.17.4",
+    "@arethetypeswrong/cli": "^0.18.1",
     "@biomejs/biome": "^1.9.4",
-    "@changesets/cli": "^2.29.2",
+    "@changesets/cli": "^2.29.3",
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
     "tsup": "^8.4.0",

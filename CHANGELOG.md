@@ -1,5 +1,11 @@
 # @voluspalabs/lib
 
+## 0.0.18
+
+### Patch Changes
+
+- c748070: Upadted packages and biome
+
 ## 0.0.17
 
 ### Patch Changes

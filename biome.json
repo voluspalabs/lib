@@ -1,20 +1,4 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.0.0/schema.json",
-  "extends": ["@voluspalabs/lint"],
-  "linter": {
-    "rules": {
-      "style": {
-        "noParameterAssign": "error",
-        "useAsConstAssertion": "error",
-        "useDefaultParameterLast": "error",
-        "useEnumInitializers": "error",
-        "useSelfClosingElements": "error",
-        "useSingleVarDeclarator": "error",
-        "noUnusedTemplateLiteral": "error",
-        "useNumberNamespace": "error",
-        "noInferrableTypes": "error",
-        "noUselessElse": "error"
-      }
-    }
-  }
+  "extends": ["@voluspalabs/lint"]
 }

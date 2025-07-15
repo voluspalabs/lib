@@ -1,5 +1,11 @@
 # @voluspalabs/lib
 
+## 0.0.22
+
+### Patch Changes
+
+- b398891: Updated code to match new lint rules
+
 ## 0.0.21
 
 ### Patch Changes

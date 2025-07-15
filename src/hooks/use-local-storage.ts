@@ -3,7 +3,9 @@ import { useCallback, useEffect, useState } from 'react'
 
 function getItemFromLocalStorage(key: string) {
   const item = window?.localStorage.getItem(key)
-  if (item) return JSON.parse(item)
+  if (item) {
+    return JSON.parse(item)
+  }
 
   return null
 }
@@ -40,7 +42,9 @@ export function useLocalStorage<T>(
     // initialize
     if (typeof window !== 'undefined') {
       const stored = getItemFromLocalStorage(key)
-      if (stored !== null) setStoredValue(stored)
+      if (stored !== null) {
+        setStoredValue(stored)
+      }
     }
   }, [key])
 

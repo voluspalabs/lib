@@ -1,5 +1,11 @@
 # @voluspalabs/lib
 
+## 0.0.21
+
+### Patch Changes
+
+- cff1449: Update packages
+
 ## 0.0.20
 
 ### Patch Changes

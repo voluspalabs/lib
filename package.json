@@ -1,6 +1,6 @@
 {
   "name": "@voluspalabs/lib",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "A collection of high-quality utility functions and React hooks for building modern web applications.",
   "keywords": [
     "lib",
@@ -106,7 +106,7 @@
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
-    "@voluspalabs/lint": "^0.0.17",
+    "@voluspalabs/lint": "^0.0.18",
     "@arethetypeswrong/cli": "^0.18.2",
     "@biomejs/biome": "^2.1.1",
     "@changesets/cli": "^2.29.5",

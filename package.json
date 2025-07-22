@@ -106,9 +106,9 @@
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
-    "@voluspalabs/lint": "^0.0.18",
+    "@voluspalabs/lint": "^0.0.20",
     "@arethetypeswrong/cli": "^0.18.2",
-    "@biomejs/biome": "^2.1.1",
+    "@biomejs/biome": "^2.1.2",
     "@changesets/cli": "^2.29.5",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",

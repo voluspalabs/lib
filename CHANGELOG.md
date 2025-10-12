@@ -1,5 +1,11 @@
 # @voluspalabs/lib
 
+## 0.0.31
+
+### Patch Changes
+
+- 1c5151a: Update packages
+
 ## 0.0.30
 
 ### Patch Changes

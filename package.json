@@ -1,6 +1,6 @@
 {
   "name": "@voluspalabs/lib",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "description": "A collection of high-quality utility functions and React hooks for building modern web applications.",
   "keywords": [
     "lib",

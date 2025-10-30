@@ -13,6 +13,20 @@ const DATE_ONLY_FORMAT_OPTIONS: Intl.DateTimeFormatOptions = {
   year: 'numeric',
 } as const
 
+// Time conversion constants
+const MS_PER_SECOND = 1000
+const SECONDS_PER_MINUTE = 60
+const MINUTES_PER_HOUR = 60
+const HOURS_PER_DAY = 24
+const DAYS_PER_MONTH = 30
+const MONTHS_PER_YEAR = 12
+const DAYS_PER_YEAR = 365
+
+// Number formatting constants
+const THOUSAND = 1000
+const HUNDRED = 100
+const MILLION = 1_000_000
+
 // Cache the formatter instances for better performance
 const dateTimeFormatter = new Intl.DateTimeFormat(
   'en-US',
@@ -102,11 +116,11 @@ export function formatDate(value: Date | string | number): string {
  * formatLatency(750)
  */
 export function formatLatency(ms: number): string {
-  if (ms >= 1000) {
+  if (ms >= MS_PER_SECOND) {
     return `${new Intl.NumberFormat('en-US', {
       minimumFractionDigits: 1,
       maximumFractionDigits: 1,
-    }).format(ms / 1000)}s`
+    }).format(ms / MS_PER_SECOND)}s`
   }
 
   return `${new Intl.NumberFormat('en-US', { maximumFractionDigits: 3 }).format(ms)}ms`
@@ -139,16 +153,16 @@ export function formatMilliseconds(value: number) {
  * @returns The formatted string representation of the number
  */
 export function formatCompactNumber(value: number) {
-  if (value >= 100 && value < 1000) {
+  if (value >= HUNDRED && value < THOUSAND) {
     return value.toString()
   }
 
-  if (value >= 1000 && value < 1_000_000) {
-    return `${(value / 1000).toFixed(1)}k`
+  if (value >= THOUSAND && value < MILLION) {
+    return `${(value / THOUSAND).toFixed(1)}k`
   }
 
-  if (value >= 1_000_000) {
-    return `${(value / 1_000_000).toFixed(1)}M`
+  if (value >= MILLION) {
+    return `${(value / MILLION).toFixed(1)}M`
   }
 
   return value.toString()
@@ -180,32 +194,32 @@ export function formatRelativeTime(date: Date | string): string {
     const diff = now.getTime() - inputDate.getTime()
 
     // Convert to appropriate time units
-    const seconds = Math.floor(diff / 1000)
-    if (seconds < 60) {
+    const seconds = Math.floor(diff / MS_PER_SECOND)
+    if (seconds < SECONDS_PER_MINUTE) {
       return 'Just now'
     }
 
-    const minutes = Math.floor(seconds / 60)
-    if (minutes < 60) {
+    const minutes = Math.floor(seconds / SECONDS_PER_MINUTE)
+    if (minutes < MINUTES_PER_HOUR) {
       return `${minutes} minute${minutes === 1 ? '' : 's'} ago`
     }
 
-    const hours = Math.floor(minutes / 60)
-    if (hours < 24) {
+    const hours = Math.floor(minutes / MINUTES_PER_HOUR)
+    if (hours < HOURS_PER_DAY) {
       return `${hours} hour${hours === 1 ? '' : 's'} ago`
     }
 
-    const days = Math.floor(hours / 24)
-    if (days < 30) {
+    const days = Math.floor(hours / HOURS_PER_DAY)
+    if (days < DAYS_PER_MONTH) {
       return `${days} day${days === 1 ? '' : 's'} ago`
     }
 
-    const months = Math.floor(days / 30)
-    if (months < 12) {
+    const months = Math.floor(days / DAYS_PER_MONTH)
+    if (months < MONTHS_PER_YEAR) {
       return `${months} month${months === 1 ? '' : 's'} ago`
     }
 
-    const years = Math.floor(days / 365)
+    const years = Math.floor(days / DAYS_PER_YEAR)
     return `${years} year${years === 1 ? '' : 's'} ago`
   } catch {
     return 'Invalid Date'

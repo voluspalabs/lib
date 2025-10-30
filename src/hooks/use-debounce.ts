@@ -1,6 +1,8 @@
 'use client'
 import { useEffect, useState } from 'react'
 
+const DEFAULT_DEBOUNCE_DELAY_MS = 500
+
 /**
  * Custom hook to debounce a changing value.
  *
@@ -19,7 +21,10 @@ export const useDebounce = <T>(value: T, delay?: number): T => {
   const [debouncedValue, setDebouncedValue] = useState<T>(value)
 
   useEffect(() => {
-    const timer = setTimeout(() => setDebouncedValue(value), delay ?? 500)
+    const timer = setTimeout(
+      () => setDebouncedValue(value),
+      delay ?? DEFAULT_DEBOUNCE_DELAY_MS,
+    )
     return () => clearTimeout(timer)
   }, [value, delay])
 

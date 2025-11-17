@@ -1,5 +1,11 @@
 # @voluspalabs/lib
 
+## 0.0.33
+
+### Patch Changes
+
+- 2d81872: Updated packages
+
 ## 0.0.32
 
 ### Patch Changes

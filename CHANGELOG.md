@@ -1,5 +1,11 @@
 # @voluspalabs/lib
 
+## 0.0.34
+
+### Patch Changes
+
+- 592c463: Updated packages and minor fix
+
 ## 0.0.33
 
 ### Patch Changes

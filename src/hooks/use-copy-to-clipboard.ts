@@ -35,7 +35,7 @@ export function useCopyToClipboard() {
   const [text, setText] = useState<string | null>(null)
 
   const copy = useCallback(
-    async (
+    (
       text: string,
       { timeout, withToast }: { timeout?: number; withToast?: boolean } = {
         timeout: 3000,
@@ -48,7 +48,7 @@ export function useCopyToClipboard() {
       }
 
       try {
-        await navigator.clipboard.writeText(text)
+        navigator.clipboard.writeText(text)
         setText(text)
 
         if (timeout) {

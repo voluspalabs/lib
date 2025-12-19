@@ -14,7 +14,7 @@
         "@changesets/cli": "^2.29.8",
         "@types/react": "^19.2.7",
         "@types/react-dom": "^19.2.3",
-        "@voluspalabs/lint": "^0.0.33",
+        "@voluspalabs/lint": "^0.0.34",
         "tsup": "^8.5.1",
         "typescript": "^5.9.3",
       },
@@ -219,7 +219,7 @@
 
     "@types/react-dom": ["@types/react-dom@19.2.3", "", { "peerDependencies": { "@types/react": "^19.2.0" } }, "sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ=="],
 
-    "@voluspalabs/lint": ["@voluspalabs/lint@0.0.33", "", {}, "sha512-g9KsKHYPJyOExENa/6u9RSWZkmZAk4HZLQvUnLF/ebs2+PeJ4RZ4vvG+gnl+3Qj0bw09Q9+N0zAbyyW3MEctGA=="],
+    "@voluspalabs/lint": ["@voluspalabs/lint@0.0.34", "", {}, "sha512-ORACqGxo7xqvY4J8jZU727+4UtffQDWoJg4JWOcpIF/ICaGgNSLyKfcrPOOIz/srPG2jOH5GoByg4/pF+dMP9w=="],
 
     "acorn": ["acorn@8.15.0", "", { "bin": { "acorn": "bin/acorn" } }, "sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg=="],
 

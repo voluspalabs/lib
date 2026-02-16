@@ -22,9 +22,9 @@ export function useHotKey(callback: () => void, key: string): void {
       }
     }
 
-    window.addEventListener('keydown', handler)
+    globalThis.addEventListener('keydown', handler)
     return () => {
-      window.removeEventListener('keydown', handler)
+      globalThis.removeEventListener('keydown', handler)
     }
   }, [key])
 }

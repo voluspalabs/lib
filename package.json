@@ -93,8 +93,7 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "clean": "bunx del-cli ./dist",
-    "build": "tsup",
+    "build": "bun run build.ts",
     "ci": "bun run build && bun run biome ci && bun run check-exports",
     "check-format": "biome check --write",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm --profile esm-only",
@@ -106,13 +105,13 @@
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
-    "@voluspalabs/lint": "^0.0.36",
     "@arethetypeswrong/cli": "^0.18.2",
     "@biomejs/biome": "^2.4.4",
     "@changesets/cli": "^2.29.8",
+    "@types/bun": "^1.3.9",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "tsup": "^8.5.1",
+    "@voluspalabs/lint": "^0.0.36",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {

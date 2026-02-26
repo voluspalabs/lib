@@ -1,7 +1,74 @@
 {
   "name": "@voluspalabs/lib",
-  "version": "0.0.37",
   "description": "A collection of high-quality utility functions and React hooks for building modern web applications.",
+  "version": "0.0.37",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./hooks/use-debounce": {
+      "import": {
+        "types": "./dist/hooks/use-debounce.d.ts",
+        "default": "./dist/hooks/use-debounce.js"
+      }
+    },
+    "./utils/format": {
+      "import": {
+        "types": "./dist/utils/format.d.ts",
+        "default": "./dist/utils/format.js"
+      }
+    },
+    "./utils/try": {
+      "import": {
+        "types": "./dist/utils/try.d.ts",
+        "default": "./dist/utils/try.js"
+      }
+    },
+    "./hooks/use-local-storage": {
+      "import": {
+        "types": "./dist/hooks/use-local-storage.d.ts",
+        "default": "./dist/hooks/use-local-storage.js"
+      }
+    },
+    "./hooks/use-copy-to-clipboard": {
+      "import": {
+        "types": "./dist/hooks/use-copy-to-clipboard.d.ts",
+        "default": "./dist/hooks/use-copy-to-clipboard.js"
+      }
+    },
+    "./hooks/use-hot-key": {
+      "import": {
+        "types": "./dist/hooks/use-hot-key.d.ts",
+        "default": "./dist/hooks/use-hot-key.js"
+      }
+    },
+    "./hooks/use-mobile": {
+      "import": {
+        "types": "./dist/hooks/use-mobile.d.ts",
+        "default": "./dist/hooks/use-mobile.js"
+      }
+    },
+    "./hooks/use-media-query": {
+      "import": {
+        "types": "./dist/hooks/use-media-query.d.ts",
+        "default": "./dist/hooks/use-media-query.js"
+      }
+    },
+    "./utils/is-array": {
+      "import": {
+        "types": "./dist/utils/is-array.d.ts",
+        "default": "./dist/utils/is-array.js"
+      }
+    },
+    "./utils/cn": {
+      "import": {
+        "types": "./dist/utils/cn.d.ts",
+        "default": "./dist/utils/cn.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
   "keywords": [
     "lib",
     "typescript",
@@ -16,84 +83,11 @@
     "type": "git",
     "url": "git+https://github.com/voluspalabs/lib.git"
   },
-  "files": [
-    "dist"
-  ],
-  "type": "module",
   "license": "MIT",
   "sideEffects": false,
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*"
-      ]
-    },
-    "hooks/use-mobile": {
-      "*": [
-        "./dist/hooks/use-mobile.d.ts"
-      ]
-    },
-    "hooks/use-debounce": {
-      "*": [
-        "./dist/hooks/use-debounce.d.ts"
-      ]
-    },
-    "utils/cn": {
-      "*": [
-        "./dist/utils/cn.d.ts"
-      ]
-    },
-    "utils/try": {
-      "*": [
-        "./dist/utils/try.d.ts"
-      ]
-    }
-  },
-  "exports": {
-    "./hooks/use-copy-to-clipboard": {
-      "types": "./dist/hooks/use-copy-to-clipboard.d.ts",
-      "default": "./dist/hooks/use-copy-to-clipboard.js"
-    },
-    "./hooks/use-debounce": {
-      "types": "./dist/hooks/use-debounce.d.ts",
-      "default": "./dist/hooks/use-debounce.js"
-    },
-    "./hooks/use-hot-key": {
-      "types": "./dist/hooks/use-hot-key.d.ts",
-      "default": "./dist/hooks/use-hot-key.js"
-    },
-    "./hooks/use-local-storage": {
-      "types": "./dist/hooks/use-local-storage.d.ts",
-      "default": "./dist/hooks/use-local-storage.js"
-    },
-    "./hooks/use-media-query": {
-      "types": "./dist/hooks/use-media-query.d.ts",
-      "default": "./dist/hooks/use-media-query.js"
-    },
-    "./hooks/use-mobile": {
-      "types": "./dist/hooks/use-mobile.d.ts",
-      "default": "./dist/hooks/use-mobile.js"
-    },
-    "./utils/cn": {
-      "types": "./dist/utils/cn.d.ts",
-      "default": "./dist/utils/cn.js"
-    },
-    "./utils/format": {
-      "types": "./dist/utils/format.d.ts",
-      "default": "./dist/utils/format.js"
-    },
-    "./utils/is-array": {
-      "types": "./dist/utils/is-array.d.ts",
-      "default": "./dist/utils/is-array.js"
-    },
-    "./utils/try": {
-      "types": "./dist/utils/try.d.ts",
-      "default": "./dist/utils/try.js"
-    },
-    "./package.json": "./package.json"
-  },
   "scripts": {
-    "build": "bun run build.ts",
+    "build": "bunup",
+    "dev": "bunup --watch",
     "ci": "bun run build && bun run biome ci && bun run check-exports",
     "check-format": "biome check --write",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm --profile esm-only",
@@ -112,10 +106,10 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@voluspalabs/lint": "^0.0.36",
+    "bunup": "^0.16.29",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "class-variance-authority": "^0.7.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "sonner": "^2.0.7"

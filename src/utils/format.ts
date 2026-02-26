@@ -135,7 +135,7 @@ export function formatLatency(ms: number): string {
  * @example
  * formatMilliseconds(1234.5678) // returns "1,234.568"
  */
-export function formatMilliseconds(value: number) {
+export function formatMilliseconds(value: number): string {
   return new Intl.NumberFormat('en-US', { maximumFractionDigits: 3 }).format(
     value,
   )
@@ -152,7 +152,7 @@ export function formatMilliseconds(value: number) {
  * @param value - The number to format
  * @returns The formatted string representation of the number
  */
-export function formatCompactNumber(value: number) {
+export function formatCompactNumber(value: number): string {
   if (value >= HUNDRED && value < THOUSAND) {
     return value.toString()
   }

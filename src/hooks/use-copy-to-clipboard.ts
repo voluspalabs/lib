@@ -31,7 +31,14 @@ import { toast } from 'sonner'
  * @param options.timeout - Duration in milliseconds before clearing the copied state (default: 3000)
  * @param options.withToast - Whether to show a toast notification when copy is successful (default: false)
  */
-export function useCopyToClipboard() {
+export function useCopyToClipboard(): {
+  text: string | null
+  copy: (
+    text: string,
+    options?: { timeout?: number; withToast?: boolean },
+  ) => boolean
+  isCopied: boolean
+} {
   const [text, setText] = useState<string | null>(null)
 
   const copy = useCallback(

@@ -1,5 +1,11 @@
 # @voluspalabs/lib
 
+## 0.0.37
+
+### Patch Changes
+
+- 843ee93: Removed tsup and update package
+
 ## 0.0.36
 
 ### Patch Changes
